@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Airbnbs NYC</title>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+  /* {% include 'styles.css' %} */
+</style>
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#Thanks Simone and Avery for the help" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Group 7</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#THE PLOTS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Group 7</a>
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Images -->
+  <div class="w3-image w3-display-container w3-center">
+    <img src="static/New York.jpeg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1 class="w3-wide"> airbnb vs Hotels</h1>
+      <h3>Manhattan, NYC</h3>
+    </div>
+  </div>
+
+  <!-- About our Data -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Intro">
+    <h2 class="w3-wide">About our Project</h2>
+    <P class="w3-left-align">
+      <b> The goal of our project aims to aid the New York Hotel Association to understand their competitor airbnb and provide
+        insights that may help them craft potential future legislation. This website includes the graphs created in our
+        <a href="https://docs.bokeh.org/en/latest/index.html"> Bokeh</a> dashboard,
+        aiming to explain what they represent, evaluate each plot with a visualization wheel and the insights they bring and list
+        our limitations & recommendations.
+      </b><br>
+   </p>
+  </div>
+
+<!--  Plot -->
+  <div class="w3-black" id="Plot">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <a href="#">
+      <h2 class="w3-wide w3-center">THE PLOTS</h2>
+    </a>
+        <div>
+
+          <button onclick="myFunction('PLOT 1')" class="w3-button w3-block w3-left-align">
+            <div ><h4 class="w3-wide w3-center"> PLOT 1 </h4>
+          </button>
+            <div id="PLOT 1" class="w3-hide">
+              <ul class="w3-ul">
+                <img src="static/Plot1.gif" style="width:100%">
+                <P class="w3-left-align">
+                  The plot displays the number of the first time an airbnb was reviewed in the period 2009 to 2019,
+                  with a slider to show the growth rate and location of the airbnb over time.
+                  Visualizing the development of the number of airbnb’s by neighbourhoods per year through the colormap and hover function.
+                  Allowed one to easily identify which neighbourhoods had been impacted by airbnbs the most.
+                  The locations of the hotels are also represented but are static for this period of time.
+                </p><br>
+                <img src="static/Viz1.png" >
+                <P class="w3-left-align">
+                  The attributes of the visualization wheel for Plot 1 are more complex as this was our first graph created in order to understand which neighbourhoods
+                  had been affected the most by airbnb. With higher figuration and as we have not selected our focus yet.
+
+                </p>
+              </ul>
+            </div>
+
+          <button onclick="myFunction('PLOT 2')" class="w3-button w3-block w3-left-align">
+            <div ><h4 class="w3-wide w3-center"> PLOT 2 </h4>
+          </button>
+            <div id="PLOT 2" class="w3-hide">
+              <ul class="w3-ul">
+                <img src="static/Plot2.gif" style="width:100%">
+                <P class="w3-left-align">
+                  In order to better visualize just how many airbnbs tend to pop up in close proximity to hotels,
+                  we chose to have a closer look at the hotels which
+                  <a href="https://www.tripadvisor.co.uk/Neighborhood-g60763-n7102356-Upper_East_Side-New_York_City_New_York.html#MAPVIEW"><i>TripAdvisor</i></a>
+                  regards as the highest-rated hotels per neighbourhood.
+                  The plot can identify the hotels in Manhattan that have experienced the most competition in terms of the density of airbnbs within 500m of each hotel.
+                  This radius was selected to visualize the theory of the agglomeration perspective,
+                  which states that “spillovers from adjacent competitors pull firms close to similar competitors” (C. Baum et. al, 1997).
+                </p><br>
+                <img src="static/Viz2.png" style="width:100%">
+                <P class="w3-left-align">
+                  Plot 2 indicate a more rounded approach to displaying the information with lightness and functionality being the goal, apparent in the  visualization wheel.
+                  This was help assist the identification how much competition different hotels faces in its close proximity for each neighbourhood. The lower density and higher
+                  familiarity score is due to the use of  a real map allowing a user to understand the locations of our variables better.
+                </p>
+              </ul>
+            </div>
+
+            <button onclick="myFunction('PLOT 3')" class="w3-button w3-block w3-left-align">
+              <div ><h4 class="w3-wide w3-center"> PLOT 3 </h4>
+            </button>
+            <div id="PLOT 3" class="w3-hide">
+              <ul class="w3-ul">
+                <img src="static/Plot3.gif" style="width:100%">
+                <P class="w3-left-align">
+                Based on the observations in the first two plots, plot three was produced to graphically represent the number of airbnbs that have popped up in Manhattan between 2009 and 2019.
+                Focusing on the development of five neighbourhoods that have experienced the highest growth rate of airbnbs.
+                This excluded neighbourhoods such as Harlem, which despite experiencing the most growth of airbnbs as a neighbourhood,
+                did not pose direct competition to hotels since only one was located in the area.
+                </p><br>
+                <img src="static/Viz3.png" style="width:100%">
+                <P class="w3-left-align">
+                  When creating Plot 3 we had identified which areas faced the highest number of airbnbs in their proximity and wanted to understand
+                  their traction over time in addition to if any external events have influenced airbnb’s growth rate. Using a simple line chart for each
+                  neighbourhood and including filtered data showing different attribute, the familiarity and density score is high.
+                </p>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Observations -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Observations">
+    <h2 class="w3-wide">OBSERVATIONS</h2>
+
+      <button onclick="myFunction('General')" class="w3-button w3-block w3-left-align">
+        <h4>General</h4>
+      </button>
+
+        <div id="General" class="w3-hide">
+          <ul class="w3-ul">
+            <li><P class="w3-left-align">
+            Our interactive charts for tabs 1 and 3 show how Airbnbs gain traction over time, while the chart in tab 2 serves to dive deeper into
+            the extent to which popular hotels are victims of the agglomeration perspective described earlier. Our main observations, mainly derive
+            from a combination of the first and third charts. First we determined what areas of Manhattan have experienced the highest growth of Airbnbs
+            throughout the recent years, then in our third tab, we investigate those neighbourhoods further, by filtering on different Airbnb attributes:<br>
+            </li>
+            <li><P class="w3-left-align">
+            - Entire homes/apartments<br>
+            - Private Rooms<br>
+            - Airbnbs with availability less than 100 days per year<br>
+            - Airbnbs with availability more than 100 days per year<br>
+            - Airbnbs with a minimum stay of fewer than thirty days<br>
+            - The most competitive Airbnbs to the Hotel association<br>
+            (comprised of points 1, 4 and 5 above as this combination resembles hotel attributes and target segment most closely)<br>
+            </li></p>
+            <li><P class="w3-left-align">
+            What’s interesting about these graphs is that they allow us to identify specific changes in time of airbnb development,
+            which can be further linked it to real life events (examples shown in graph) and help the hotel association understand
+            the impact of lobbying activities. As reported by <a href="https://www.nytimes.com/2016/10/22/technology/new-york-passes-law-airbnb.html"><b>The New York Times</b></a>,
+            “New York state in October 2016 passed some of the toughest restrictions on short-term rentals in the country. In most of New York City,
+            it's now illegal to advertise or rent an entire apartment on a platform like Airbnb for less than 30 days unless the host is present and there
+            are only one or two guests”.<br>
+            </li></p>
+            <li><P class="w3-left-align">
+            Although none of our graphs show the exact combination of the conditions/attributes mentioned above, they do show the individual ones,
+            and if we look at the vertical lines indicating when the legislation was passed, it does show that growth of Airbnbs slows down. Another article
+            noted that “despite the prospect of increased fines, and a lower standard of proof for enforcement under the new law, between October and November,
+            "Entire home/apartment" Airbnb listings dropped only 5.9%”. Moreover, the same article states that “for almost 1/3 of the Entire home/apartment listings
+            that disappeared, the host simply changed the Airbnb "room type" to a "Private" or "Shared" room without changing anything else about the listing” (Cox, 2016).
+            Despite the relatively low reduction in growth, our graph, along with the information above, does help the hotel association understand the effect that these
+            legislation laws can have on the growth rate of airbnbs.
+          </li></p><br>
+          </ul>
+        </div>
+
+        <button onclick="myFunction('Neighborhood')" class="w3-button w3-block w3-left-align">
+          <h4>Financial District Neighborhood</h4>
+        </button>
+
+          <div id="Neighborhood" class="w3-hide">
+            <ul class="w3-ul">
+              <P class="w3-left-align">
+                Looking at the interactive charts in tabs 1 and 3, there is a clear spike in airbnbs in
+                the growth of airbnbs in the Financial District between 2018 and 2019, all seemingly centered
+                around a block/building. We thought this observation was intriguing and found out that a <a href="https://patch.com/new-york/downtown-nyc/new-hospitality-start-backed-airbnb-coming-fidi">
+                “hospitality start-up backed by Airbnb”</a> was recently <a href="https://www.crainsnewyork.com/real-estate/airbnb-backed-startup-plans-first-city-location-70-pine">
+                launched</a> in the FiDi. The Airbnb backed
+                hospitality company, Lyric may have found a loophole for NYC’s short letting legislation by taking out a
+                long lease of a skyscraper in the FiDi and converting the apartments into short lets. Airbnb may continue
+                to do the same if this loophole is not addressed as it would essentially allow them the benefits of operating
+                as a hotel without the higher tax burden. Events like these are imperative for the Manhattan Hotel association
+                to take note of, specifically because these types of airbnbs have the most competitive attributes (see tab 3 in Plot),
+                and thus pose the highest competitive threat.
+              </p><br>
+            </ul>
+          </div>
+
+          <button onclick="myFunction('Methodology and Limitstions')" class="w3-button w3-block w3-left-align">
+            <h4>Methodology and Limitations</h4>
+          </button>
+
+            <div id="Methodology and Limitstions" class="w3-hide">
+              <ul class="w3-ul">
+                <li class = "w3-left-align">Distance between hotels and airbnbs was calculated using Haversine formula, which assumes the earth is a sphere hence has a 0.3% error of margin.</li>
+                <li class = "w3-left-align"><a href = "https://cloud.google.com/maps-platform/"><b>Googlemaps API</b></a> was used to search for the coordinants of the htels using  their address.</li>
+                <P class="w3-left-align">
+                As a result of the dataset we worked with, there are certain limitations. First of all, we compute
+                the growth of airbnbs over time in all plots based on when an airbnb received its first review.
+                This means that we had to exclude potential airbnbs that have zero reviews. Our dataset also does
+                not report unlisting of airbnbs, so we cannot show when and if they potentially disappeared.
+                At last, we were not able to tell if a host changed their listing type attributes after legislations
+                were passed. However as mentioned earlier, this is something that did in fact widely occur.
+              </p></ul>
+            </div>
+
+            <button onclick="myFunction('Recommendations for future research')" class="w3-button w3-block w3-left-align">
+              <h4>Recommendations for future research</h4>
+            </button>
+            <div id="Recommendations for future research" class="w3-hide">
+              <ul class="w3-ul">
+                <li class="w3-left-align">
+                  Based on a combination of our observations and limitations, there are certain recommendations for
+                  future studies that would be valuable to look at.
+                  </li><br>
+                  <li class="w3-left-align">
+                  The use of the <a href="https://www.airbnb.com/partner?c=tumblr&af=746240"><b>airbnb</b></a> api does
+                  would allow the contrast the prices and ratings of listings while the data dynamically remains up-to-date.
+                </li>
+                  <li class="w3-left-align">
+                  Lastly, checking whether hosts changed any of the listing features after, for example, certain legislations were passed is imperative
+                  in order to understand the extent of their impact, and to identify loopholes that should be covered in future legislations.
+                  explain entire shift to room
+                  </li>
+              </ul>
+            </div>
+
+
+
+
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="static/grey NYC crop.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer --> -->
+<!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey">
+  <p class="w3-medium">Group 7 thanks you for the help Avery & Simone</p>
+</footer> -->
+
+<script>
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+</script>
+
+</body>
+</html>

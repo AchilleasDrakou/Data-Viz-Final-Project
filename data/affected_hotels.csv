@@ -1,0 +1,12 @@
+,FIELD1,doc_id,hotel,hotel_url,zip,geometry,x,y,neighbourhood,no_airbnbs
+29,usa_new york city_the_bowery_hotel,the bowery hotel,The Bowery Hotel,335 bowery,10003,POINT (-8236710.463244814 4972012.842773601),-8236710.463,4972012.843,Lower East Side,109
+42,usa_new york city_hotel_beacon,hotel beacon,Hotel Beacon,2130 broadway at 75th street,10023,POINT (-8235531.222482993 4980046.652328458),-8235531.222,4980046.652,Upper West Side,61
+66,usa_new york city_millenium_hilton,millenium hilton,Millenium Hilton,55 church street,10007,POINT (-8238793.673931621 4969830.83174078),-8238793.674,4969830.832,Financial District,133
+94,usa_new york city_the_plaza,the plaza,The Plaza,5th ave at 59th street,10019,POINT (-8234637.260180229 4977638.677326542),-8234637.26,4977638.677,Midtown,32
+101,usa_new york city_414_hotel,414 hotel,414 Hotel,414 w 46th st,10036,POINT (-8236724.578556245 4977192.058564625),-8236724.579,4977192.059,Hells Kitchen,257
+134,usa_new york city_the_standard_new_york,the standard new york,The Standard New York,848 washington street,10014,POINT (-8238545.231092068 4974202.672445654),-8238545.231,4974202.672,Greenwich Village,33
+148,usa_new york city_the_carlyle_a_rosewood_hotel,the carlyle a rosewood hotel,The Carlyle A Rosewood Hotel,35 east 76th street,10021,POINT (-8233540.852251506 4979124.800276916),-8233540.852,4979124.8,Upper East Side,17
+152,usa_new york city_the_sylvan_guest_house,the sylvan guest house,The Sylvan Guest House,12 sylvan terrace,10032,POINT (-8230895.467004245 4987983.643039804),-8230895.467,4987983.643,Washington Heights,33
+190,usa_new york city_hotel_deauville,hotel deauville,Hotel Deauville,103 east 29th street,10016,POINT (-8235756.021062702 4974636.636109338),-8235756.021,4974636.636,Kips Bay,139
+220,usa_new york city_duane_street_hotel,duane street hotel,Duane Street Hotel,130 duane street,10013,POINT (-8238471.660040604 4970518.812582562),-8238471.66,4970518.813,TriBeCa,30
+248,usa_new york city_astor_on_the_park,astor on the park,Astor On The Park,465 central park west,10025,POINT (-8233191.98809931 4982675.898627439),-8233191.988,4982675.899,Upper West Side,50
