@@ -1,6 +1,6 @@
-# Group-7---Data-Viz-Final-Project
+# Data-Viz-Final-Project
 
-# To access our Bokeh dashboard
+# To access the Bokeh dashboard
 
 For the jupiter notebook  
 ### Competitive Market Analysis for Manhattan Hotels.ipynb
